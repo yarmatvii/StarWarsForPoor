@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<Hull xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Cost>125</Cost>
+  <Health>1</Health>
+  <Ammo>100</Ammo>
+</Hull>

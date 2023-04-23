@@ -1,0 +1,10 @@
+C:\Users\Matvey\Desktop\papka\StarWarsForPoorVersionAndrew\StarWars\bin\Release\StarWarsForPoor.exe.config
+C:\Users\Matvey\Desktop\papka\StarWarsForPoorVersionAndrew\StarWars\bin\Release\StarWarsForPoor.exe
+C:\Users\Matvey\Desktop\papka\StarWarsForPoorVersionAndrew\StarWars\bin\Release\StarWarsForPoor.pdb
+C:\Users\Matvey\Desktop\papka\StarWarsForPoorVersionAndrew\StarWars\obj\Release\StarWarsForPoor.ArmouryForm.resources
+C:\Users\Matvey\Desktop\papka\StarWarsForPoorVersionAndrew\StarWars\obj\Release\StarWarsForPoor.SpaceWinForm.resources
+C:\Users\Matvey\Desktop\papka\StarWarsForPoorVersionAndrew\StarWars\obj\Release\StarWarsForPoor.Properties.Resources.resources
+C:\Users\Matvey\Desktop\papka\StarWarsForPoorVersionAndrew\StarWars\obj\Release\StarWarsForPoor.csproj.GenerateResource.cache
+C:\Users\Matvey\Desktop\papka\StarWarsForPoorVersionAndrew\StarWars\obj\Release\StarWarsForPoor.csproj.CoreCompileInputs.cache
+C:\Users\Matvey\Desktop\papka\StarWarsForPoorVersionAndrew\StarWars\obj\Release\StarWarsForPoor.exe
+C:\Users\Matvey\Desktop\papka\StarWarsForPoorVersionAndrew\StarWars\obj\Release\StarWarsForPoor.pdb

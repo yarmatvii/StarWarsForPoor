@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{214535F7-F2EC-4645-96C2-59DE19F8F364}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>StarWarsForPoor</RootNamespace>
+    <AssemblyName>StarWarsForPoor</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Messaging" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Factories\Factory.cs" />
+    <Compile Include="Forms\ArmouryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ArmouryForm.Designer.cs">
+      <DependentUpon>ArmouryForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Armoury.cs" />
+    <Compile Include="Helpers\IRngProvider.cs" />
+    <Compile Include="Helpers\Money.cs" />
+    <Compile Include="IFactory.cs" />
+    <Compile Include="ILives.cs" />
+    <Compile Include="IPunch.cs" />
+    <Compile Include="IShipMod.cs" />
+    <Compile Include="Objects\InSpace\Asteroid.cs" />
+    <Compile Include="Objects\InSpace\Asteroids\EnormousAsteroid.cs" />
+    <Compile Include="Objects\InSpace\Asteroids\MediumAstroid.cs" />
+    <Compile Include="Objects\InSpace\Asteroids\SmallAsteroid.cs" />
+    <Compile Include="Objects\InSpace\Bullet.cs" />
+    <Compile Include="Objects\InSpace\HealAndAmmo\Ammo.cs" />
+    <Compile Include="Objects\InSpace\HealAndAmmo\Heal.cs" />
+    <Compile Include="Objects\InSpace\Ship.cs" />
+    <Compile Include="Objects\Parts\Hull.cs" />
+    <Compile Include="Objects\Parts\Part.cs" />
+    <Compile Include="Objects\Parts\Weapon.cs" />
+    <Compile Include="World\Space.cs" />
+    <Compile Include="Forms\SpaceForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SpaceForm.Designer.cs">
+      <DependentUpon>SpaceForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Objects\MyObject.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\ArmouryForm.resx">
+      <DependentUpon>ArmouryForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SpaceForm.resx">
+      <DependentUpon>SpaceForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
